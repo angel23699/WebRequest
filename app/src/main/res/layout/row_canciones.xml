@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:padding="@dimen/padding_row_song">
+
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/imageSong"
+        android:layout_width="@dimen/size_image_song"
+        android:layout_height="@dimen/size_image_song"
+        android:layout_marginEnd="@dimen/padding_row_song"
+        android:layout_marginRight="@dimen/padding_row_song"
+        app:border="true"
+        app:border_color="#EEEEEE"
+        app:border_width="2dp"
+        app:shadow="true" />
+
+    <TextView
+        android:id="@+id/nameSong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageSong"
+        android:layout_toRightOf="@+id/imageSong"
+        android:text="Song"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nameArtist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameSong"
+        android:layout_toEndOf="@+id/imageSong"
+        android:layout_toRightOf="@+id/imageSong"
+        android:text="Artist"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
